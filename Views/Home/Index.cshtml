@@ -5,18 +5,41 @@
 <html>
 <head>
     <style>
-        div{
-            overflow: auto;
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+
+        body{
+            background-color: turquoise;
+        }
+
+        .container{
+            text-align: center;
+            
+        }
+
+        .row {
+            padding: 10px 0;
+        }
+
+        .row > div > img {
+            margin-bottom: 10px;
+            margin-right: 5px;
+            width: 100%;
+        }
+
 
     </style>
 </head>
 <body>
     <div class="container">
         <h1>My Photo Gallery</h1>
-        <p>Flexbox with Gallery</p>
+        <h5>Flexbox with Gallery</h5>
         <div class="row">
-            <div>
+            <div class="column">
                 <img src="~/css/img/261-400x600.jpg" />
                 <img src="~/css/img/272-400x600.jpg" />
                 <img src="~/css/img/312-400x600.jpg" />
@@ -24,7 +47,7 @@
                 <img src="~/css/img/466-400x600.jpg" />
                 <img src="~/css/img/563-400x600.jpg" />
             </div>
-            <div>
+            <div class="column">
                 <img src="~/css/img/667-400x600.jpg" />
                 <img src="~/css/img/608-400x600.jpg" />
                 <img src="~/css/img/693-400x600.jpg" />
@@ -32,7 +55,7 @@
                 <img src="~/css/img/783-400x600.jpg" />
                 <img src="~/css/img/784-400x600.jpg" />
             </div>
-            <div>
+            <div class="column">
                 <img src="~/css/img/832-400x600.jpg" />
                 <img src="~/css/img/876-400x600.jpg" />
                 <img src="~/css/img/261-400x600.jpg" />
@@ -40,7 +63,7 @@
                 <img src="~/css/img/272-400x600.jpg" />
                 <img src="~/css/img/312-400x600.jpg" />
             </div>
-            <div>
+            <div class="column">
                 <img src="~/css/img/378-400x600.jpg" />
                 <img src="~/css/img/466-400x600.jpg" />
                 <img src="~/css/img/563-400x600.jpg" />
